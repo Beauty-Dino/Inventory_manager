@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Scanner to Square POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="magic.js" async></script>
+    
+<div class="container">
+    <h1 class="title">Scan Items to Square POS</h1>
+    <div class="data">
+        <div class="input-section">
+            <label>Sku:</label>
+            <input type="text" class="sku" placeholder="Scan Barcode" autofocus>
+        </div>
+        
+        <div class="input-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Item Name">
+        </div>
+        
+        <div class="input-section">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Quantity" min="1" value="1">
+        </div>
+
+        <div class="input-section">
+            <label for="current-quantity">Current Quantity: </label>
+            <input type="number" id="current-quantity" readonly>
+        </div>
+    </div>
+
+    <div class="scanned-items"></div>
+
+    <div class="submit">
+        <button onclick ="UploadData()" class="">Upload to Square POS</button>
+    </div>
+    
+    
+</div>
+
+</body>
+</html>

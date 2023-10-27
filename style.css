@@ -1,0 +1,30 @@
+body{
+    background-color: lightblue
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.input-section{
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.scanned-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
